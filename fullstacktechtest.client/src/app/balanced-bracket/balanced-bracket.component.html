@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Balanced Bracket Checker</h1>
+  <form (ngSubmit)="checkBalancedBrackets()">
+    <div>
+      <label for="inputString">Input Brackets:</label>
+      <input type="text" id="input" [(ngModel)]="input" name="input" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <p *ngIf="result">Result: {{ result }}</p>
+</div>

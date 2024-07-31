@@ -1,0 +1,17 @@
+<div class="container">
+  <h2>Highest Palindrome</h2>
+  <form #palindromeForm="ngForm" (ngSubmit)="findHighestPalindrome(palindromeForm)">
+    <div class="form-group">
+      <label for="number">Number (s):</label>
+      <input type="text" class="form-control" id="number" name="number" [(ngModel)]="number" required>
+    </div>
+    <div class="form-group">
+      <label for="k">Integer (k):</label>
+      <input type="number" class="form-control" id="k" name="k" [(ngModel)]="k" required>
+    </div>
+    <button type="submit" class="btn btn-primary" [disabled]="palindromeForm.invalid">Submit</button>
+  </form>
+  <div *ngIf="result">
+    <h3>Result: {{ result }}</h3>
+  </div>
+</div>

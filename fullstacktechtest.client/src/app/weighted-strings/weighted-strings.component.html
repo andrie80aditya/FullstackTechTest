@@ -1,0 +1,20 @@
+<div class="container">
+  <h1>Weighted Strings</h1>
+  <form (ngSubmit)="onSubmit()">
+    <div>
+      <label for="inputString">Input String:</label>
+      <input type="text" id="inputString" [(ngModel)]="inputString" name="inputString" required>
+    </div>
+    <div>
+      <label for="queries">Queries (comma-separated):</label>
+      <input type="text" id="queries" [(ngModel)]="queries" name="queries" required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+  <div *ngIf="results.length > 0">
+    <h2>Results:</h2>
+    <ul>
+      <li *ngFor="let result of results">{{ result }}</li>
+    </ul>
+  </div>
+</div>

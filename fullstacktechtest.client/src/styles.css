@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+nav {
+  background-color: #333;
+  overflow: hidden;
+  padding: 1em 0;
+}
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+    nav ul li {
+      display: inline;
+      margin-right: 1em;
+    }
+
+      nav ul li:last-child {
+        margin-right: 0;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2em;
+        padding: 0.5em 1em;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+        nav ul li a:hover {
+          background-color: #575757;
+          color: #fff;
+        }
+
+        nav ul li a.active {
+          background-color: #575757;
+        }
+
+router-outlet {
+  display: block;
+  padding: 2em;
+  background-color: #fff;
+  margin: 1em auto;
+  max-width: 900px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
