@@ -15,5 +15,6 @@ Balanced Bracket Complexity Analysis
 
 This ensures the solution is efficient both in terms of time and space, handling the problem with the lowest complexity possible.
 
-Backend URL : https://fullstacktechtestserver20240801011010.azurewebsites.net/swagger/index.html
-Frontend URL : https://fullstacktechtestserver20240801011010.azurewebsites.net/
+URL:
+1. Backend URL : https://fullstacktechtestserver20240801011010.azurewebsites.net/swagger/index.html
+2. Frontend URL : https://fullstacktechtestserver20240801011010.azurewebsites.net/
